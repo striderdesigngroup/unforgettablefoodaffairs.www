@@ -1,0 +1,261 @@
+body {
+	font: normal normal 13px/140% 'Open Sans', Arial, Helvetica, sans-serif;
+	background: transparent url('../images/background-gold.png') repeat-x top center !important;
+}
+
+.row {
+	padding: 10px;
+}
+
+.inline-block {
+	display: inline-block;
+	height: 340px;
+}
+
+.btn-margin-left {
+	
+margin-left: 10px;
+}
+
+.btn-default {
+  color: #4d0c3c;
+  background-color: #B89FB1;
+  border-color: #B89FB1;
+}
+.btn-default:focus, 
+.btn-default.focus {
+  color: #333;
+  background-color: #4d0c3c;
+  border-color: #8c8c8c;
+}
+.btn-default:hover {
+  color: #fff;
+  background-color: #4d0c3c;
+  border-color: #4d0c3c;
+}
+
+hr {
+	border: 1px solid #b89eb1 !important;
+}
+
+span.small {
+	font-size: 90% !important;
+	color: #666;
+}
+
+.top-bar {
+	margin-top: 5px;
+}
+
+	.top-bar a {
+		color: white;
+		font-size: 1.05em;
+	}
+
+.navbar {
+	text-transform: uppercase;
+	color: #976d2a;
+	font: normal 600 1em/140% 'Open Sans', Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+	margin-top: 6em;
+	margin-bottom: 0px;
+	text-align: right;
+}
+
+	.navbar-default {
+		float: right;
+		background: transparent !important;
+		border: transparent !important;
+		padding: 0px !important;
+	}
+
+		li a {
+			padding: 10px 10px 0px 15px !important;
+			color: #976d2a !important;
+		}
+
+		li a:hover, li a.current {
+			color: #4d0c3c !important;
+		}
+
+@media (min-width: 992px) {
+	.navbar {
+		margin-top: 4.5em;
+		font: normal 600 1.25em/140% 'Open Sans', Arial, Helvetica, sans-serif;
+	}
+
+	.inline-block {
+		display: inline-block;
+		height: 330px;
+	}
+}
+
+
+@media (max-width: 767px) {
+
+	button.navbar-toggle {
+		display: block;
+		margin-right: -15px !important;
+	}
+
+	.navbar {
+		width: 100%;
+		text-align: left;
+		margin-right: 15px;
+	}
+
+	.navbar li {
+		
+	}
+
+	.navbar li a {
+		padding: 5px 15px !important;
+		background: #b89eb1;
+		color: #4d0c3c !important;
+	}
+
+		.navbar li a:hover, .navbar li a:focus, .navbar li a.current {
+			background-color: #4d0c3c !important;
+			color: white !important;
+		}
+
+	.footer ul li a {
+			font: 600 normal 0.85em/160% 'Open Sans', Arial, Helvetica, sans-serif !important;
+		}
+
+		.footer ul li:after {
+			content: "|";
+			padding: 0 2px !important; 
+		}
+
+
+	.inline-block {
+		display: inline-block;
+		height: 340px;
+	}	
+
+
+
+}
+
+.btn-primary {
+	background-color: #4d0c3c;
+	border: none;
+}
+
+.btn-primary:hover {
+	background-color: #B89FB1;
+	border: none;
+}
+
+
+
+
+button.navbar-toggle {
+	background: #b89eb1 !important;
+	margin-right: 0px;
+}
+
+button.navbar-toggle span {
+	background-color: #4d0c3c !important;
+}
+
+	button.navbar-toggle.collapsed {
+		background: #4d0c3c !important;
+		color: white !important;
+	}
+
+	button.navbar-toggle.collapsed span {
+		background-color: white !important;
+	}
+
+
+ul.sidebar {
+    list-style: none;
+    padding:0;
+    margin: 0 0 1em;
+}
+
+ul.sidebar li { 
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+ul.sidebar li:before {
+    content: "•  ";
+    color: #976d2a; /* or whatever color you prefer */
+}
+
+
+.footer {
+	background-color: #4d0c3c;
+	text-align: center;
+	color: white;
+	padding: 1.25em 1.25em 1em;
+	line-height: 160%;
+}
+
+	.footer ul {
+		padding-left: 0;
+	}
+
+	.footer ul li {
+		display: inline-block;
+	}	
+
+		.footer ul li:after {
+			content: "|";
+			padding: 0 1em;
+		}
+
+			.footer ul li:last-child:after {
+				content: none;
+			}
+
+		.footer ul li a {
+			text-transform: uppercase;
+			color: white !important;
+			font: 600 normal 1.15em/160% 'Open Sans', Arial, Helvetica, sans-serif;
+		}
+
+		.footer ul li a:hover {
+			text-decoration: underline;
+		}
+
+ul.package li {
+	font-size: 95%;
+	margin-left: -2em !important;
+}
+
+form.contact-form input,form.contact-form select {
+	width: 100%;	
+	display: inline-block;
+	border: 1px solid #999;
+	padding: 4px;
+	margin: 0px 0px 0.75em 0px;	
+}
+
+form.contact-form textarea {
+	width: 100%;	
+	display: inline-block;
+	border: 1px solid #999;
+	padding: 4px;
+	margin: 0px 0px 0.75em 0px;	
+}
+
+input.submit {
+	background-color: #976d2a;
+	border: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 1px;
+}
+
+	input.submit:hover {
+		background-color: #4d0c3c;
+	}
+
+.extra-padding h4 {
+	padding: 0.25em 0em;
+}
