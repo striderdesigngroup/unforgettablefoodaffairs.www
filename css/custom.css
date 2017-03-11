@@ -1,6 +1,10 @@
 body {
-	font: normal normal 13px/140% 'Open Sans', Arial, Helvetica, sans-serif;
+	font: normal normal 15px/140% 'Open Sans', Arial, Helvetica, sans-serif;
 	background: transparent url('../images/background-gold.png') repeat-x top center !important;
+}
+
+p {
+	font: normal normal 15px/160% 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 .row {
@@ -12,9 +16,8 @@ body {
 	height: 340px;
 }
 
-.btn-margin-left {
-	
-margin-left: 10px;
+.btn-margin-left {	
+	margin-left: 10px;
 }
 
 .btn-default {
@@ -32,6 +35,10 @@ margin-left: 10px;
   color: #fff;
   background-color: #4d0c3c;
   border-color: #4d0c3c;
+}
+
+.img-margin-bottom {
+	margin-bottom: 20px;
 }
 
 hr {
@@ -55,7 +62,7 @@ span.small {
 .navbar {
 	text-transform: uppercase;
 	color: #976d2a;
-	font: normal 600 1em/140% 'Open Sans', Arial, Helvetica, sans-serif;
+	font: normal 600 15px/140% 'Open Sans', Arial, Helvetica, sans-serif;
 	letter-spacing: 1px;
 	margin-top: 6em;
 	margin-bottom: 0px;
@@ -187,12 +194,17 @@ ul.sidebar li:before {
 }
 
 
+
 .footer {
 	background-color: #4d0c3c;
 	text-align: center;
 	color: white;
 	padding: 1.25em 1.25em 1em;
 	line-height: 160%;
+}
+
+.footer a {
+	color: white;
 }
 
 	.footer ul {
