@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Contact Us</title>
+    <title>Contact Us | Unforgettable Food Affairs</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,7 +30,7 @@
     <div class="col-sm-12">
       <div class="pull-right top-bar">
         <a href="tel:9196627678">Phone: (919) 662-7678</a>
-        <a href="" target="_blank"><img src="images/graphic-facebook.png" border="0" width="16" style="margin-left:10px;" /></a>
+        <a href="https://www.facebook.com/UnforgettableFoodAffairs/" target="_blank"><img src="images/graphic-facebook.png" border="0" width="16" style="margin:-4px 0px 0px 10px;" /></a>
       </div>
     </div>
   </div>
@@ -58,6 +59,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="menu.html">Menu</a></li>
+              <li><a href="venues.html">Venues</a></li>
               <li><a href="events.html">Events</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="gallery.html">Gallery</a></li>
@@ -69,13 +71,11 @@
     </div>
   </div>
 
-  <!--
   <div class="row">
     <div class="col-xs-12">
-      <img src="images/about-placeholder.jpg" border="0" class="img-responsive" />
+      <h3 class="title">Contact Us</h3>
     </div>
   </div>
-  -->
 
   <div class="row">
     <div class="col-sm-6">
@@ -95,86 +95,98 @@
 
     <div class="col-sm-6">
       <form data-licenseKey="JF-8AY050423J354563X" name="jqueryform-5fc7de" id="jqueryform-5fc7de" action='admin.php' method='post' enctype='multipart/form-data' novalidate autocomplete="on">
+
         <input type="hidden" name="method" value="validateForm">
         <input type="hidden" id="serverValidationFields" name="serverValidationFields" value="">
-        <div class="col-sm-6">
-          <div class="form-group c37 required" data-cid="c37">
-            <label class="control-label" for="c37">Name</label>
-            <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-user"></i> </span>
-              <input type="text" class="form-control" id="c37" name="c37" value="" data-rule-required="true"  />
-            </div>
+
+        
+        <div class="form-group f1 required col-sm-6" data-fid="f1">
+          <label class="control-label" for="f1">Your Name</label>
+
+          <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-user"></i> </span>
+            <input type="text" class="form-control" id="f1" name="f1" value=""    
+              data-rule-required="true"  />
+          </div> 
+        </div>
+
+        <div class="form-group f4 col-sm-6" data-fid="f4">
+          <label class="control-label" for="f4">Company</label>
+
+          <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-briefcase"></i> </span>
+            <input type="text" class="form-control" id="f4" name="f4" value=""     />
           </div>
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c32 required" data-cid="c32">
-            <label class="control-label" for="c32">Email</label>
-            <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-envelope"></i> </span>
-              <input type="email" class="form-control" id="c32" name="c32" value="" data-rule-email="true" data-rule-required="true"  />
-            </div>
+        <div class="form-group f2 required col-sm-6" data-fid="f2">
+          <label class="control-label" for="f2">Email</label>
+
+          <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-envelope"></i> </span>
+            <input type="email" class="form-control" id="f2" name="f2" value=""   
+              data-rule-email="true" 
+              data-rule-required="true"  />
           </div>
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c47 required" data-cid="c47">
-            <label class="control-label" for="c47">Phone</label>
-            <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-earphone"></i> </span>
-              <input type="tel" class="form-control" id="c47" name="c47" value=""    
-              data-rule-pattern="[0-9 -+.]+" data-msg-pattern="Invalid phone number"  
-              data-rule-required="true"   />
-            </div>        
+        <div class="form-group f6 col-sm-6" data-fid="f6">
+          <label class="control-label" for="f6">Phone</label>
+
+          <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-earphone"></i> </span>
+            <input type="tel" class="form-control" id="f6" name="f6" value=""   placeholder="xxx-xxx-xxxx" 
+            data-rule-pattern="[0-9]{3,4}[ -.]*[0-9]{3,4}[ -.]*[0-9]{4}" data-msg-pattern="Invalid phone number"    />
           </div>
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c42 " data-cid="c42">
-            <label class="control-label" for="c42">Company</label>
-            <input type="text" class="form-control" id="c42" name="c42" value="" />   
+        <div class="form-group f7 col-sm-6" data-fid="f7">
+          <label class="control-label" for="f7">Venue</label>
+
+          <div class="input-group"><span class="input-group-addon left"><i class="fa fa-building"></i> </span>
+            <input type="text" class="form-control" id="f7" name="f7" value=""     />
           </div>
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c55 " data-cid="c55">
-            <label class="control-label" for="c55">Address</label>
-            <input type="text" class="form-control" id="c55" name="c55" value="" />
+        <div class="form-group f8 col-sm-6" data-fid="f8">
+          <label class="control-label" for="f8">Event Date</label>
+
+          <div class="input-group date"><span class="input-group-addon left"><i class="fa fa-calendar"></i> </span>
+            <input type="text" class="form-control datepicker" id="f8" name="f8" value=""    
+              data-datepicker-format="mm/dd/yyyy" />
+            <span class="input-group-addon right"><i class="glyphicon glyphicon-th"></i> </span>
+          </div> 
+        </div>
+
+        <div class="form-group f9 col-sm-6" data-fid="f9">
+          <label class="control-label" for="f9">Timeframe</label>
+
+          <div class="input-group"><span class="input-group-addon left"><i class="fa fa-clock-o"></i> </span>
+            <input type="text" class="form-control" id="f9" name="f9" value=""   placeholder="Ex: 3:00pm - 7:00pm"  />
           </div>
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c66 " data-cid="c66">
-            <label class="control-label" for="c66">City</label>
-            <input type="text" class="form-control" id="c66" name="c66" value="" />         
-          </div>
+        <div class="form-group f10 col-sm-6" data-fid="f10">
+          <label class="control-label" for="f10">Estimated Guest Count</label>
+
+          <div class="input-group"><span class="input-group-addon left"><i class="fa fa-users"></i> </span>
+            <input type="text" class="form-control " id="f10" name="f10" value=""    
+              data-rule-number="true"   />
+          </div> 
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c71 " data-cid="c71">
-            <label class="control-label" for="c71">State</label>
-            <input type="text" class="form-control" id="c71" name="c71" value="" />
-          </div>
+        <div class="form-group f11 col-sm-12" data-fid="f11">
+          <label class="control-label" for="f11">Type of Menu Desired</label>
+
+          <div class="input-group"><span class="input-group-addon left"><i class="fa fa-cutlery" aria-hidden=”true></i>  </span>
+            <input type="text" class="form-control" id="f11" name="f11" value=""     />
+          </div> 
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c76 " data-cid="c76">
-            <label class="control-label" for="c76">Zip</label>
-            <input type="text" class="form-control" id="c76" name="c76" value="" />
-          </div>
-        </div>
+        <div class="form-group f12 col-sm-12" data-fid="f12">
+          <label class="control-label" for="f12">How did you hear about us?</label>
 
-        <div class="col-sm-12">
-          <div class="form-group c87 " data-cid="c87">
-            <label class="control-label" for="c87">How Did you Hear About Us?</label>
-            <input type="text" class="form-control" id="c87" name="c87" value="" />
+          <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-headphones"></i> </span>
+            <input type="text" class="form-control" id="f12" name="f12" value=""     />
           </div>
         </div>
-
-        <div class="col-sm-12">
-          <div class="form-group c92 required" data-cid="c92">
-            <label class="control-label" for="c92">Event Details</label>
-            <textarea class="form-control" id="c92" name="c92" rows="3"   
-              data-rule-required="true" ></textarea>  
-          </div>
-        </div>
+      
 
         <div class="col-sm-12">
           <div class='form-group recaptcha'>

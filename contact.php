@@ -90,7 +90,7 @@ endif;
     <div class="col-sm-12">
       <div class="pull-right top-bar">
         <a href="tel:9196627678">Phone: (919) 662-7678</a>
-        <a href="" target="_blank"><img src="images/graphic-facebook.png" border="0" width="16" style="margin-left:10px;" /></a>
+        <a href="https://www.facebook.com/UnforgettableFoodAffairs/" target="_blank"><img src="images/graphic-facebook.png" border="0" width="16" style="margin:-4px 0px 0px 10px;" /></a>
       </div>
     </div>
   </div>

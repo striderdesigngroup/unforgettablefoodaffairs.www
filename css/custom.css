@@ -11,6 +11,34 @@ p {
 	padding: 10px;
 }
 
+h3.title {
+	font: bold normal 20px/160% 'Open Sans', Arial, Helvetica, sans-serif;
+	color: #4f153b;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 2px 0px -5px 0px !important;
+}
+
+h4.venue {
+	color: #4f153b;
+	font: normal normal 20px/160% 'Open Sans', Arial, Helvetica, sans-serif;
+	margin-bottom: -8px;
+}
+
+h4.gallery {
+	color: #4f153b;
+	font: normal normal 20px/160% 'Open Sans', Arial, Helvetica, sans-serif;
+	margin-bottom: 0px;
+}
+
+p.venue-city {
+	color: #999;
+}
+
+.margin-bottom {
+	margin-bottom: 10px;
+}
+
 .inline-block {
 	display: inline-block;
 	height: 340px;
@@ -62,7 +90,6 @@ span.small {
 .navbar {
 	text-transform: uppercase;
 	color: #976d2a;
-	font: normal 600 15px/140% 'Open Sans', Arial, Helvetica, sans-serif;
 	letter-spacing: 1px;
 	margin-top: 6em;
 	margin-bottom: 0px;
@@ -88,7 +115,7 @@ span.small {
 @media (min-width: 992px) {
 	.navbar {
 		margin-top: 4.5em;
-		font: normal 600 1.25em/140% 'Open Sans', Arial, Helvetica, sans-serif;
+		font: normal 600 1.15em/140% 'Open Sans', Arial, Helvetica, sans-serif;
 	}
 
 	.inline-block {
