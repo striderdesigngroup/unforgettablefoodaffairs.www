@@ -80,8 +80,6 @@
   </div>
 
   <div class="row">
-    <div class="container-fluid">
-    <!-- add extra container element for Masonry -->
     <div class="grid">
 
       <!-- add sizing element for columnWidth -->
@@ -239,8 +237,31 @@
         </div>
       </div>
 
+      <div class="grid-item col-xs-12 col-sm-4">
+        <div class="grid-item-content">
+          <a href="images/gallery/cater-27.jpg" data-lightbox="main-gallery" data-title="">
+            <img src="images/gallery/cater-27.jpg" alt="" border="0" class="img-responsive"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <div class="grid-item-content">
+          <a href="images/gallery/cater-28.jpg" data-lightbox="main-gallery" data-title="">
+            <img src="images/gallery/cater-28.jpg" alt="" border="0" class="img-responsive"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <div class="grid-item-content">
+          <a href="images/gallery/cater-29.jpg" data-lightbox="main-gallery" data-title="">
+            <img src="images/gallery/cater-29.jpg" alt="" border="0" class="img-responsive"/>
+          </a>
+        </div>
+      </div>
+
     </div>
-  </div>
   </div>
 
   <!--
@@ -337,20 +358,22 @@
 <script src="js/lightbox.js"></script>
 
 <script>
-  $('.grid').masonry({
-  itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});
+  // with Masonry & jQuery
+  // init Masonry
+  var $grid = $('.grid').masonry({
+    // Masonry options...
+    itemSelector: '.grid-item', 
+  });
 
-// get Masonry instance
-var msnry = $grid.data('masonry');
+  // get Masonry instance
+  var msnry = $grid.data('masonry');
 
-$('.grid').infiniteScroll({
-  // options
-  append: '.grid-item',
-  outlayer: msnry,
-});
+  // init Infinite Scroll
+  $grid.infiniteScroll({
+    // Infinite Scroll options...
+    append: '.grid-item',
+    outlayer: msnry,
+  });
 </script>
 
 </body>

@@ -306,5 +306,13 @@ input.submit {
 	padding: 0px 30px 0px 0px;
 }
 
+/* reveal grid after images loaded */
+.grid.are-images-unloaded {
+  opacity: 0;
+}
 
+/* hide by default */
+.grid.are-images-unloaded .image-grid__item {
+  opacity: 0;
+}
 
