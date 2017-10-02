@@ -59,6 +59,13 @@ p.venue-city {
   background-color: #4d0c3c;
   border-color: #8c8c8c;
 }
+
+.btn-default:active, 
+.btn-default.active {
+  color: #333;
+  background-color: #4d0c3c;
+  border-color: #8c8c8c;
+}
 .btn-default:hover {
   color: #fff;
   background-color: #4d0c3c;
@@ -85,6 +92,10 @@ span.small {
 	.top-bar a {
 		color: white;
 		font-size: 1.05em;
+	}
+
+	.top-bar a:hover {
+		text-decoration: none;
 	}
 
 .navbar {

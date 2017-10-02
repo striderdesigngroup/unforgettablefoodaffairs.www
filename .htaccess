@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# Misc friendly URLs
+RewriteRule  ^Services/? 	services.html [NC,L]
