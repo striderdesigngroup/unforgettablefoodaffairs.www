@@ -19,11 +19,16 @@ h3.title {
 	margin: 2px 0px -5px 0px !important;
 }
 
-h4.venue {
+h4.venue a {
 	color: #4f153b;
 	font: normal normal 20px/160% 'Open Sans', Arial, Helvetica, sans-serif;
-	margin-bottom: -8px;
+	
 }
+
+	h4.venue a:hover {
+		text-decoration: none;
+		color: #976d2a;
+	}
 
 h4.gallery {
 	color: #4f153b;
@@ -33,6 +38,7 @@ h4.gallery {
 
 p.venue-city {
 	color: #999;
+	margin-top: -16px !important;
 }
 
 .margin-bottom {
@@ -56,7 +62,7 @@ p.venue-city {
 .btn-default:focus, 
 .btn-default.focus {
   color: #333;
-  background-color: #4d0c3c;
+  background-color: #4d0c3c !important;
   border-color: #8c8c8c;
 }
 
