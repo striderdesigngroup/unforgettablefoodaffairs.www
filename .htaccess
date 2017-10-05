@@ -1,17 +1,3 @@
-# No web server version and indexes
-ServerSignature Off
-Options -Indexes
-
-Options +FollowSymLinks
 RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
-RewriteBase /
-
-# Block suspicious request methods
-RewriteCond %{REQUEST_METHOD} ^(HEAD|TRACE|DELETE|TRACK|DEBUG) [NC]
-RewriteRule ^(.*)$ - [F,L]
-
-# Misc friendly URLs
-RewriteRule  ^Services/? 	services.html [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
