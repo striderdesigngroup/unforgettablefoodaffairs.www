@@ -92,7 +92,7 @@
   </div> 
 -->
 
-  <div class="row">
+  <div class="row" id="gallery">
     <button onclick="topFunction()" id="myBtn" class="btn btn-primary" title="Back to top">&#9650; Top</button>
 
     <div class="grid">
@@ -359,7 +359,7 @@
         </a>
       </div>
 
-      <!--
+      
       <div class="grid-item col-xs-12 col-sm-4">
         <a href="images/gallery/cater-51.jpg" data-lightbox="main-gallery" data-title="">
           <img src="images/gallery/cater-51.jpg" alt="" border="0" class="img-responsive"/>
@@ -1313,8 +1313,7 @@
           <img src="images/gallery/cater-211.jpg" alt="" border="0" class="img-responsive"/>
         </a>
       </div>
-    -->
-<!--
+ 
       <div class="grid-item col-xs-12 col-sm-4">
         <a href="images/gallery/cater-212.jpg" data-lightbox="main-gallery" data-title="">
           <img src="images/gallery/cater-212.jpg" alt="" border="0" class="img-responsive"/>
@@ -1835,7 +1834,7 @@
         <a href="images/gallery/cater-300.jpg" data-lightbox="main-gallery" data-title="">
           <img src="images/gallery/cater-300.jpg" alt="" border="0" class="img-responsive"/>
         </a>
-      </div>-->
+      </div>
 
       
      
@@ -1870,7 +1869,8 @@
 <script src="js/bootstrap.min.js"></script>
 
 <script src="js/infinite-scroll.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.js"></script>
+<script src="js/imagesloaded.pkgd.js"></script>
 <script src="js/lightbox.js"></script>
 
 <script>
@@ -1879,6 +1879,26 @@
   var $grid = $('.grid').masonry({
     // Masonry options...
     itemSelector: '.grid-item', 
+  });
+
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
+
+  $('#gallery').imagesLoaded()
+  .always( function( instance ) {
+    console.log('all images loaded');
+  })
+  .done( function( instance ) {
+    console.log('all images successfully loaded');
+  })
+  .fail( function() {
+    console.log('all images loaded, at least one is broken');
+  })
+  .progress( function( instance, image ) {
+    var result = image.isLoaded ? 'loaded' : 'broken';
+    console.log( 'image is ' + result + ' for ' + image.img.src );
   });
 </script>
 
