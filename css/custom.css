@@ -7,6 +7,10 @@ p {
 	font: normal normal 15px/160% 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
+a {
+	color: #4f153b;
+}
+
 .row {
 	padding: 10px;
 }

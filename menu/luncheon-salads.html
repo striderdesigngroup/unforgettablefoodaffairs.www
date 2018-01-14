@@ -80,6 +80,7 @@
 
 
   <div class="row">
+    <button onclick="topFunction()" id="myBtn" class="btn btn-primary" title="Back to top">&#9650; Top</button>
     <div class="col-xs-12">
       <div class="pull-right" style="margin-bottom:15px;">
         <a href="beverages.html" class="btn btn-xs btn-default pull-right btn-margin-left ">
@@ -228,7 +229,7 @@
     </div>
   </div>
 
-
+</div>
 
 <div class="row footer">
   <div class="col-xs-12">
@@ -242,7 +243,7 @@
       <li><a href="../contact.html">Contact</a></li>
     </ul>
       <p>© <script>document.write(new Date().getFullYear())</script> Unforgettable Food Affairs, Inc. All Rights Reserved.<br />
-        Site Produced by <a href="http://www.striderdesigngroup.com" target="_blank">Strider Design Group</a>.</p>
+        Site Produced by <a href="https://www.striderdesigngroup.com" target="_blank">Strider Design Group</a>.</p>
   </div>
 </div>
 
@@ -250,6 +251,25 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../js/bootstrap.min.js"></script>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 
 </body>
 </html>
