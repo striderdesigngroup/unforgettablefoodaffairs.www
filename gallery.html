@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>About Unforgettable Food Affairs</title>
+    <title>Galleries | Unforgettable Food Affairs</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+    <link rel="SHORTCUT ICON" type="image/gif" href="favicon.gif" />
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,7 +34,8 @@
     <div class="col-sm-12">
       <div class="pull-right top-bar">
         <a href="tel:9196627678">Phone: (919) 662-7678</a>
-        <a href="" target="_blank"><img src="images/graphic-facebook.png" border="0" width="16" style="margin-left:10px;" /></a>
+        <a href="https://www.facebook.com/UnforgettableFoodAffairs/" target="_blank"><img src="images/graphic-facebook.png" border="0" width="16" style="margin:-4px 0px 0px 10px;" /></a>
+        <a href="https://www.instagram.com/unforgettablefoodaffairs/" target="_blank"><img src="images/graphic-instagram.png" border="0" width="16" style="margin:-4px 0px 0px 5px;" /></a>
       </div>
     </div>
   </div>
@@ -58,6 +64,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="menu.html">Menu</a></li>
+              <li><a href="venues.html">Venues</a></li>
               <li><a href="events.html">Events</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="gallery.html" class="current">Gallery</a></li>
@@ -71,15 +78,311 @@
 
   <div class="row">
     <div class="col-xs-12">
-      <h4>Galleries</h4>
+      <h3 class="title">Our Photos</h3>
+      <p>Here is a sampling of some of our events. More photos coming soon!</p>
+    </div>
+  </div>
+<!--
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-secondary btn-md">
+        <a href="">Test Text</a>
+      </button>
+    </div>
+  </div> 
+-->
+
+  <div class="row" id="gallery">
+    <button onclick="topFunction()" id="myBtn" class="btn btn-primary" title="Back to top">&#9650; Top</button>
+
+    <div class="grid">
+
+      <!-- add sizing element for columnWidth -->
+      <div class="grid-sizer col-xs-12 col-sm-4"></div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-1.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-1.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-4.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-4.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-6.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-6.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-7.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-7.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-8.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-8.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-9.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-9.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-10.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-10.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-11.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-11.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-12.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-12.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-13.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-13.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-14.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-14.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-15.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-15.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-16.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-16.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-17.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-17.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-18.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-18.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-19.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-19.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-20.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-20.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-21.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-21.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-22.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-22.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-23.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-23.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-24.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-24.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-25.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-25.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-26.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-26.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-27.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-27.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-28.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-28.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-29.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-29.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-30.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-30.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-31.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-31.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-32.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-32.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-33.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-33.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-34.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-34.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-35.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-35.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-36.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-36.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-37.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-37.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-38.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-38.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-39.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-39.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-40.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-40.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-41.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-41.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-43.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-43.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-45.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-45.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-46.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-46.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-47.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-47.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-48.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-48.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+      
+      <div class="grid-item col-xs-12 col-sm-4">
+        <a href="images/gallery/cater-51.jpg" data-lightbox="main-gallery" data-title="">
+          <img src="images/gallery/cater-51.jpg" alt="" border="0" class="img-responsive"/>
+        </a>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <button class="btn btn-primary pull-right">  
+            <a href="gallery-2.html">Next &raquo;</a>       
+        </button>
+      </div>
     </div>
 
   </div>
 
-  
-
+<!-- End of Container div -->
 </div>
 
+<div class="clearfix"></a>
 
 <div class="row footer">
   <div class="col-xs-12">
@@ -93,7 +396,7 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
       <p>© <script>document.write(new Date().getFullYear())</script> Unforgettable Food Affairs, Inc. All Rights Reserved.<br />
-        Site Produced by Sam Snyder Designs.</p>
+        Site Produced by <a href="https://www.striderdesigngroup.com" target="_blank">Strider Design Group</a>.</p>
   </div>
 </div>
 
@@ -101,6 +404,59 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+
+<script src="js/infinite-scroll.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.js"></script>
+<script src="js/imagesloaded.pkgd.js"></script>
+<script src="js/lightbox.js"></script>
+
+<script>
+  // with Masonry & jQuery
+  // init Masonry
+  var $grid = $('.grid').masonry({
+    // Masonry options...
+    itemSelector: '.grid-item', 
+  });
+
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
+
+  $('#gallery').imagesLoaded()
+  .always( function( instance ) {
+    console.log('all images loaded');
+  })
+  .done( function( instance ) {
+    console.log('all images successfully loaded');
+  })
+  .fail( function() {
+    console.log('all images loaded, at least one is broken');
+  })
+  .progress( function( instance, image ) {
+    var result = image.isLoaded ? 'loaded' : 'broken';
+    console.log( 'image is ' + result + ' for ' + image.img.src );
+  });
+</script>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 
 </body>
 </html>

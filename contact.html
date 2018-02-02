@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Contact Us</title>
+    <title>Contact Us | Unforgettable Food Affairs</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+    <link rel="SHORTCUT ICON" type="image/gif" href="favicon.gif" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,6 +20,151 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
+  <link href="vendor.css" rel="stylesheet">
+
+  <style type="text/css">
+  body{
+    background-color: transparent;
+  }
+
+  .jf-form{
+    margin-top: 28px;
+  }
+
+  .jf-form > form{
+    margin-bottom: 32px;
+  }
+
+  .jf-option-box{
+    display: none;
+    margin-left: 8px;
+  }
+
+  .jf-hide{
+    display: none;
+  }
+
+  .jf-disabled {
+      background-color: #eeeeee;
+      opacity: 0.6;
+      pointer-events: none;
+  }
+
+  /* 
+  overwrite bootstrap default margin-left, because the <label> doesn't contain the <input> element.
+  */
+  .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    position: absolute;
+    margin-top: 4px \9;
+    margin-left: 0px;
+  }
+
+  div.form-group{
+    padding: 8px 8px 4px 8px;
+  }
+
+  .mainDescription{
+    margin-bottom: 10px;
+  }
+
+  p.description{
+    margin:0px;
+  }
+
+  .responsive img{
+    width: 100%;
+  }
+
+  p.error, p.validation-error{
+    padding: 5px;
+  }
+
+  p.error{
+    margin-top: 10px;
+    color:#a94442;
+  }
+
+  p.server-error{
+    font-weight: bold;
+  }
+
+  div.thumbnail{
+    position: relative;
+    text-align: center;
+  }
+
+  div.thumbnail.selected p{
+    color: #ffffff;
+  }
+
+  div.thumbnail .glyphicon-ok-circle{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: #ffffff;
+    font-size: 32px;
+  }
+
+  .jf-copyright{color: #888888; display: inline-block; margin: 16px;display:none;}
+
+  .form-group.required .control-label:after {
+      color: #dd0000;
+      content: "*";
+      margin-left: 6px;
+  }
+
+  .submit .btn.disabled, .submit .btn[disabled]{
+    background: transparent;
+    opacity: 0.75;
+  }
+
+  /* for image option with span text */
+  .checkbox label > span, .radio label > span{
+    display: block;
+  }
+
+  .form-group.inline .control-label,
+  .form-group.col-1 .control-label,
+  .form-group.col-2 .control-label,
+  .form-group.col-3 .control-label
+  {
+    display: block;
+  }
+
+  .form-group.inline div.radio,
+  .form-group.inline div.checkbox{
+    display: inline-block;
+  }
+
+  .form-group.col-1 div.radio,
+  .form-group.col-1 div.checkbox{
+    display: block;
+  }
+
+  .form-group.col-2 div.radio,
+  .form-group.col-2 div.checkbox{
+    display: inline-flex;
+    width: 48%;
+  }
+
+  .form-group.col-3 div.radio,
+  .form-group.col-3 div.checkbox{
+    display: inline-flex;
+    width: 30%;
+  }
+
+  .clearfix:after {
+     content: ".";
+     visibility: hidden;
+     display: block;
+     height: 0;
+     clear: both;
+  }
+
+  </style>
+
   </head>
 
 <body>
@@ -29,7 +177,8 @@
     <div class="col-sm-12">
       <div class="pull-right top-bar">
         <a href="tel:9196627678">Phone: (919) 662-7678</a>
-        <a href="" target="_blank"><img src="images/graphic-facebook.png" border="0" width="16" style="margin-left:10px;" /></a>
+        <a href="https://www.facebook.com/UnforgettableFoodAffairs/" target="_blank"><img src="images/graphic-facebook.png" border="0" width="16" style="margin:-4px 0px 0px 10px;" /></a>
+        <a href="https://www.instagram.com/unforgettablefoodaffairs/" target="_blank"><img src="images/graphic-instagram.png" border="0" width="16" style="margin:-4px 0px 0px 5px;" /></a>
       </div>
     </div>
   </div>
@@ -58,6 +207,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="menu.html">Menu</a></li>
+              <li><a href="venues.html">Venues</a></li>
               <li><a href="events.html">Events</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="gallery.html">Gallery</a></li>
@@ -69,17 +219,15 @@
     </div>
   </div>
 
-  <!--
   <div class="row">
     <div class="col-xs-12">
-      <img src="images/about-placeholder.jpg" border="0" class="img-responsive" />
+      <h3 class="title">Contact Us</h3>
     </div>
   </div>
-  -->
 
   <div class="row">
     <div class="col-sm-6">
-      <p>We appreciate your consideration in planning your affair. Please contact us using the most convenient method.</p>
+      <p>We appreciate your consideration in planning your affair. Please contact us via <a href="mailto:food@raleighcatering.com">food@raleighcatering.com</a>.</p>
       <p>
         Unforgettable Food Affairs, Inc<br />
         5533 NC HWY 42 Suite B26<br />
@@ -90,137 +238,184 @@
 
       <br />
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12975.875117656733!2d-78.5689743!3d35.6038367!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca4cd7cc2adc71c9!2sUnforgettable+Food+Affairs!5e0!3m2!1sen!2sus!4v1479528870328" width="100%" height="440" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+      <br /><br />
     </div>
-
-    <div class="col-sm-6">
+<!--
+    <div class="col-sm-6 jf-form">
       <form data-licenseKey="JF-8AY050423J354563X" name="jqueryform-5fc7de" id="jqueryform-5fc7de" action='admin.php' method='post' enctype='multipart/form-data' novalidate autocomplete="on">
+
         <input type="hidden" name="method" value="validateForm">
         <input type="hidden" id="serverValidationFields" name="serverValidationFields" value="">
-        <div class="col-sm-6">
-          <div class="form-group c37 required" data-cid="c37">
-            <label class="control-label" for="c37">Name</label>
-            <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-user"></i> </span>
-              <input type="text" class="form-control" id="c37" name="c37" value="" data-rule-required="true"  />
-            </div>
+
+
+
+        <div class="form-group f37 required col-sm-6" data-fid="f37">
+          <label class="control-label" for="f37">Name</label>
+
+          <div class="input-group"><span class="input-group-addon left">
+            <i class="glyphicon glyphicon-user"></i> </span>
+            <input type="text" class="form-control" id="f37" name="f37" value=""    
+              data-rule-required="true"  />
           </div>
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c32 required" data-cid="c32">
-            <label class="control-label" for="c32">Email</label>
-            <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-envelope"></i> </span>
-              <input type="email" class="form-control" id="c32" name="c32" value="" data-rule-email="true" data-rule-required="true"  />
-            </div>
+        <div class="form-group f42 col-sm-6" data-fid="f42">
+          <label class="control-label" for="f42">Company</label>
+
+          <div class="input-group">
+            <span class="input-group-addon left"><i class="fa fa-briefcase"></i> </span>
+            <input type="text" class="form-control" id="f42" name="f42" value=""     />
           </div>
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c47 required" data-cid="c47">
-            <label class="control-label" for="c47">Phone</label>
-            <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-earphone"></i> </span>
-              <input type="tel" class="form-control" id="c47" name="c47" value=""    
+
+        <div class="form-group f32 required col-sm-6" data-fid="f32">
+          <label class="control-label" for="f32">Email</label>
+
+          <div class="input-group">
+            <span class="input-group-addon left"><i class="glyphicon glyphicon-envelope"></i> </span>
+            <input type="email" class="form-control" id="f32" name="f32" value=""   
+              data-rule-email="true" 
+              data-rule-required="true"  />
+          </div>
+        </div>
+
+
+        <div class="form-group f47 required col-sm-6" data-fid="f47">
+          <label class="control-label" for="f47">Phone</label>
+
+          <div class="input-group">
+            <span class="input-group-addon left"><i class="glyphicon glyphicon-earphone"></i> </span>
+            <input type="tel" class="form-control" id="f47" name="f47" value=""   placeholder="xxx-xxx-xxxx" 
               data-rule-pattern="[0-9 -+.]+" data-msg-pattern="Invalid phone number"  
               data-rule-required="true"   />
-            </div>        
           </div>
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c42 " data-cid="c42">
-            <label class="control-label" for="c42">Company</label>
-            <input type="text" class="form-control" id="c42" name="c42" value="" />   
+
+        <div class="form-group f101 col-sm-6" data-fid="f101">
+          <label class="control-label" for="f101">Venue</label>
+
+          <div class="input-group">
+            <span class="input-group-addon left"><i class="fa fa-building-o"></i> </span>
+            <input type="text" class="form-control" id="f101" name="f101" value=""     />
           </div>
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c55 " data-cid="c55">
-            <label class="control-label" for="c55">Address</label>
-            <input type="text" class="form-control" id="c55" name="c55" value="" />
+
+        <div class="form-group f102 col-sm-6" data-fid="f102">
+          <label class="control-label" for="f102">Event Date</label>
+
+        <div class="input-group date">
+          <span class="input-group-addon left"><i class="fa fa-calendar"></i> </span>
+          <input type="text" class="form-control datepicker" id="f102" name="f102" value=""    
+          data-datepicker-startDate="0d" />
+          <span class="input-group-addon right"><i class="glyphicon glyphicon-th"></i> </span></div>
+        </div>
+
+
+        <div class="form-group f103 col-sm-6" data-fid="f103">
+          <label class="control-label" for="f103">Timeframe</label>
+
+          <div class="input-group">
+            <span class="input-group-addon left"><i class="fa fa-clock-o"></i> </span>
+            <input type="text" class="form-control" id="f103" name="f103" value=""   placeholder="Ex: 3:00pm - 7:00pm"  />
           </div>
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c66 " data-cid="c66">
-            <label class="control-label" for="c66">City</label>
-            <input type="text" class="form-control" id="c66" name="c66" value="" />         
+
+        <div class="form-group f104 col-sm-6" data-fid="f104">
+          <label class="control-label" for="f104">Estimated Guest Count</label>
+
+          <div class="input-group">
+            <span class="input-group-addon left"><i class="fa fa-users"></i> </span>
+            <input type="text" class="form-control" id="f104" name="f104" value=""     />
           </div>
         </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c71 " data-cid="c71">
-            <label class="control-label" for="c71">State</label>
-            <input type="text" class="form-control" id="c71" name="c71" value="" />
-          </div>
-        </div>
 
-        <div class="col-sm-6">
-          <div class="form-group c76 " data-cid="c76">
-            <label class="control-label" for="c76">Zip</label>
-            <input type="text" class="form-control" id="c76" name="c76" value="" />
-          </div>
-        </div>
 
-        <div class="col-sm-12">
-          <div class="form-group c87 " data-cid="c87">
-            <label class="control-label" for="c87">How Did you Hear About Us?</label>
-            <input type="text" class="form-control" id="c87" name="c87" value="" />
-          </div>
-        </div>
 
-        <div class="col-sm-12">
-          <div class="form-group c92 required" data-cid="c92">
-            <label class="control-label" for="c92">Event Details</label>
-            <textarea class="form-control" id="c92" name="c92" rows="3"   
-              data-rule-required="true" ></textarea>  
-          </div>
-        </div>
+<div class="form-group f105 " data-fid="f105">
+  <label class="control-label" for="f105">Type of Menu Desired</label>
 
-        <div class="col-sm-12">
-          <div class='form-group recaptcha'>
-            <script type="text/javascript">
-              function renderReCaptcha(){
-                var jfKey = '6Ldh_QkTAAAAAA1WdrF09PX4bYuZklOKqzAZ916H', // when form loaded from jqueryform.com
-                realKey = '6LdJdgwUAAAAACXViZjG_r8pcrnw3BiFSjJlUyjF',
-                theme = 'light',
-                key = -1 !== location.href.indexOf('jqueryform.com/') ? jfKey : realKey;
-                grecaptcha.render( document.getElementById('g-recaptcha'), {
-                    'sitekey' : key,
-                    'theme' : theme
-                  });
-              };
-            </script>
-            <script src="https://www.google.com/recaptcha/api.js?hl=&onload=renderReCaptcha&render=explicit" async defer></script>
-            <div id='g-recaptcha' class='g-recaptcha col_field' data-theme='light' data-sitekey='6LdJdgwUAAAAACXViZjG_r8pcrnw3BiFSjJlUyjF'></div>
-          </div>
-        </div>
+<div class="input-group"><span class="input-group-addon left"><i class="fa fa-cutlery"></i> </span>
+<input type="text" class="form-control" id="f105" name="f105" value=""     />
+</div>
 
-        <div class="form-group submit c100 col-sm-12" data-cid="c100" style="position: relative;">
-          <label class="control-label sr-only" for="c100" style="display: block;">Submit Button</label>
+  
+</div>
 
-          <div class="progress" style="display: none; z-index: -1; position: absolute;">
-            <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%">
-            </div>
-          </div>
 
-          <button type="submit" class="btn btn-primary btn-med" style="z-index: 1;">
-              Submit
-          </button>
 
-          <p class="error bg-warning" style="display:none;">
-            Please check the required fields.  
-          </p>
-        </div>
 
-      </form>
+<div class="form-group f87 " data-fid="f87">
+  <label class="control-label" for="f87">How Did you Hear About Us?</label>
+
+
+<input type="text" class="form-control" id="f87" name="f87" value=""     />
+
+
+  
+</div>
+
+
+
+
+
+<div class='form-group recaptcha'>
+  <script type="text/javascript">
+    function renderReCaptcha(){
+      var jfKey = '6LdopwYTAAAAABunoQoWr5mZGVpVSmTFumNM8ZfO', // when form loaded from jqueryform.com
+      realKey = '6LdJdgwUAAAAACXViZjG_r8pcrnw3BiFSjJlUyjF',
+      theme = 'light',
+      key = -1 !== location.href.indexOf('jqueryform.com/') ? jfKey : realKey;
+      grecaptcha.render( document.getElementById('g-recaptcha'), {
+          'sitekey' : key,
+          'theme' : theme
+        });
+    };
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?hl=&onload=renderReCaptcha&render=explicit" async defer></script>
+  <div id='g-recaptcha' class='g-recaptcha col_field' data-theme='light' data-sitekey='6LdJdgwUAAAAACXViZjG_r8pcrnw3BiFSjJlUyjF'></div>
+</div>
+
+
+
+
+
+<div class="form-group submit f100 " data-fid="f100" style="position: relative;">
+  <label class="control-label sr-only" for="f100" style="display: block;">Submit Button</label>
+
+  <div class="progress" style="display: none; z-index: -1; position: absolute;">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%">
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-lg" style="z-index: 1;">
+      Submit
+  </button>
+
+</div><div class="clearfix"></div>
+
+<div class="submit">
+  <p class="error bg-warning" style="display:none;">
+    Please check the required fields.  </p>
+</div>
+
+<div class="clearfix"></div>
+
+
+</form>
 
     <!--<a href="http://www.jqueryform.com" target="_blank" class="jf-copyright">Powered by jqueryform.com</a>-->
     </div>
 
-    <div class="jf-thankyou" style="display:none;" data-redirect="thank-you.html" data-seconds="">
+    <div class="container jf-thankyou" style="display:none;" data-redirect="thank-you.html" data-seconds="">
       <h3>Your form has been submitted. Thank You!</h3>
     </div>
   </div>
+-->
 </div>
 
 
@@ -236,7 +431,7 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
       <p>© <script>document.write(new Date().getFullYear())</script> Unforgettable Food Affairs, Inc. All Rights Reserved.<br />
-        Site Produced by Sam Snyder Designs.</p>
+        Site Produced by <a href="https://www.striderdesigngroup.com" target="_blank">Strider Design Group</a>.</p>
   </div>
 </div>
 
@@ -254,7 +449,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 <script src="vendor.js" ></script>
 
-<script src="jqueryform.com.min.js?ver=v1.0-rc25&id=jqueryform-5fc7de" ></script>
+<script src="jqueryform.com.min.js?ver=v2.1.0&id=jqueryform-5fc7de" ></script>
 
 
 <script type="text/javascript">

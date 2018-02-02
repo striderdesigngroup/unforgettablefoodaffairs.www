@@ -70,6 +70,8 @@ endif;
     <link href="css/custom.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
 
+    <link rel="SHORTCUT ICON" type="image/gif" href="favicon.gif" />
+
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -90,7 +92,8 @@ endif;
     <div class="col-sm-12">
       <div class="pull-right top-bar">
         <a href="tel:9196627678">Phone: (919) 662-7678</a>
-        <a href="" target="_blank"><img src="images/graphic-facebook.png" border="0" width="16" style="margin-left:10px;" /></a>
+        <a href="https://www.facebook.com/UnforgettableFoodAffairs/" target="_blank"><img src="images/graphic-facebook.png" border="0" width="16" style="margin:-4px 0px 0px 10px;" /></a>
+        <a href="https://www.instagram.com/unforgettablefoodaffairs/" target="_blank"><img src="images/graphic-instagram.png" border="0" width="16" style="margin:-4px 0px 0px 5px;" /></a>
       </div>
     </div>
   </div>
@@ -236,7 +239,7 @@ endif;
       <li><a href="contact.html">Contact</a></li>
     </ul>
       <p>© <script>document.write(new Date().getFullYear())</script> Unforgettable Food Affairs, Inc. All Rights Reserved.<br />
-        Site Produced by Sam Snyder Designs.</p>
+        Site Produced by <a href="https://www.striderdesigngroup.com" target="_blank">Strider Design Group</a>.</p>
   </div>
 </div>
 
