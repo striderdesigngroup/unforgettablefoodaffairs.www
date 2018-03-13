@@ -22,149 +22,6 @@
     <![endif]-->
 
 
-  <link href="vendor.css" rel="stylesheet">
-
-  <style type="text/css">
-  body{
-    background-color: transparent;
-  }
-
-  .jf-form{
-    margin-top: 28px;
-  }
-
-  .jf-form > form{
-    margin-bottom: 32px;
-  }
-
-  .jf-option-box{
-    display: none;
-    margin-left: 8px;
-  }
-
-  .jf-hide{
-    display: none;
-  }
-
-  .jf-disabled {
-      background-color: #eeeeee;
-      opacity: 0.6;
-      pointer-events: none;
-  }
-
-  /* 
-  overwrite bootstrap default margin-left, because the <label> doesn't contain the <input> element.
-  */
-  .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
-    position: absolute;
-    margin-top: 4px \9;
-    margin-left: 0px;
-  }
-
-  div.form-group{
-    padding: 8px 8px 4px 8px;
-  }
-
-  .mainDescription{
-    margin-bottom: 10px;
-  }
-
-  p.description{
-    margin:0px;
-  }
-
-  .responsive img{
-    width: 100%;
-  }
-
-  p.error, p.validation-error{
-    padding: 5px;
-  }
-
-  p.error{
-    margin-top: 10px;
-    color:#a94442;
-  }
-
-  p.server-error{
-    font-weight: bold;
-  }
-
-  div.thumbnail{
-    position: relative;
-    text-align: center;
-  }
-
-  div.thumbnail.selected p{
-    color: #ffffff;
-  }
-
-  div.thumbnail .glyphicon-ok-circle{
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    color: #ffffff;
-    font-size: 32px;
-  }
-
-  .jf-copyright{color: #888888; display: inline-block; margin: 16px;display:none;}
-
-  .form-group.required .control-label:after {
-      color: #dd0000;
-      content: "*";
-      margin-left: 6px;
-  }
-
-  .submit .btn.disabled, .submit .btn[disabled]{
-    background: transparent;
-    opacity: 0.75;
-  }
-
-  /* for image option with span text */
-  .checkbox label > span, .radio label > span{
-    display: block;
-  }
-
-  .form-group.inline .control-label,
-  .form-group.col-1 .control-label,
-  .form-group.col-2 .control-label,
-  .form-group.col-3 .control-label
-  {
-    display: block;
-  }
-
-  .form-group.inline div.radio,
-  .form-group.inline div.checkbox{
-    display: inline-block;
-  }
-
-  .form-group.col-1 div.radio,
-  .form-group.col-1 div.checkbox{
-    display: block;
-  }
-
-  .form-group.col-2 div.radio,
-  .form-group.col-2 div.checkbox{
-    display: inline-flex;
-    width: 48%;
-  }
-
-  .form-group.col-3 div.radio,
-  .form-group.col-3 div.checkbox{
-    display: inline-flex;
-    width: 30%;
-  }
-
-  .clearfix:after {
-     content: ".";
-     visibility: hidden;
-     display: block;
-     height: 0;
-     clear: both;
-  }
-
-  </style>
-
   </head>
 
 <body>
@@ -240,184 +97,128 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12975.875117656733!2d-78.5689743!3d35.6038367!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca4cd7cc2adc71c9!2sUnforgettable+Food+Affairs!5e0!3m2!1sen!2sus!4v1479528870328" width="100%" height="440" frameborder="0" style="border:0" allowfullscreen></iframe>
       <br /><br />
     </div>
-<!--
-    <div class="col-sm-6 jf-form">
-      <form data-licenseKey="JF-8AY050423J354563X" name="jqueryform-5fc7de" id="jqueryform-5fc7de" action='admin.php' method='post' enctype='multipart/form-data' novalidate autocomplete="on">
 
-        <input type="hidden" name="method" value="validateForm">
-        <input type="hidden" id="serverValidationFields" name="serverValidationFields" value="">
+    <div class="col-sm-6">
+      <form id="contact-form" method="post" action="contact.php" role="form">
 
+        <div class="messages"></div>
 
+          <div class="controls">
 
-        <div class="form-group f37 required col-sm-6" data-fid="f37">
-          <label class="control-label" for="f37">Name</label>
+              <div class="row">
+                  <div class="col-md-12">
+                    <p class="text-muted">* Indicates a required field.</p>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_name">* Name</label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Firstname is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_company">Company</label>
+                          <input id="form_company" type="text" name="company" class="form-control" placeholder="" required="required" data-error="Lastname is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+             
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_email">* Email</label>
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_phone">Phone</label>
+                          <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+            
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_venue">Venue</label>
+                          <input id="form_venue" type="text" name="venue" class="form-control" placeholder="">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_date">Event Date</label>
+                          <input id="form_date" type="date" name="date" class="form-control datepicker" data-datepicker-startDate="0d">
+                      </div>
+                  </div>
+              
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_count">Estimated Guest Count</label>
+                          <input id="form_count" type="text" name="count" class="form-control" placeholder="">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group date">
+                          <label for="form_menu">Type of Menu Desired</label>
+                          <input id="form_menu" type="text" name="menu" class="form-control">
+                      </div>
+                  </div>
+              
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <label for="form_message">Message</label>
+                          <textarea id="form_message" name="message" class="form-control" placeholder="" rows="2"></textarea>
+                      </div>
+                  </div>
 
-          <div class="input-group"><span class="input-group-addon left">
-            <i class="glyphicon glyphicon-user"></i> </span>
-            <input type="text" class="form-control" id="f37" name="f37" value=""    
-              data-rule-required="true"  />
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <div class="g-recaptcha" data-sitekey="6LdJdgwUAAAAACXViZjG_r8pcrnw3BiFSjJlUyjF" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                          <input class="form-control hidden" data-recaptcha="true" required data-error="Please complete the Captcha">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-12">
+                      <input type="submit" class="btn btn-primary btn-send" value="SUBMIT">
+                  </div>
+              </div>
+              
           </div>
-        </div>
 
-        <div class="form-group f42 col-sm-6" data-fid="f42">
-          <label class="control-label" for="f42">Company</label>
+      </form>
 
-          <div class="input-group">
-            <span class="input-group-addon left"><i class="fa fa-briefcase"></i> </span>
-            <input type="text" class="form-control" id="f42" name="f42" value=""     />
-          </div>
-        </div>
-
-
-        <div class="form-group f32 required col-sm-6" data-fid="f32">
-          <label class="control-label" for="f32">Email</label>
-
-          <div class="input-group">
-            <span class="input-group-addon left"><i class="glyphicon glyphicon-envelope"></i> </span>
-            <input type="email" class="form-control" id="f32" name="f32" value=""   
-              data-rule-email="true" 
-              data-rule-required="true"  />
-          </div>
-        </div>
-
-
-        <div class="form-group f47 required col-sm-6" data-fid="f47">
-          <label class="control-label" for="f47">Phone</label>
-
-          <div class="input-group">
-            <span class="input-group-addon left"><i class="glyphicon glyphicon-earphone"></i> </span>
-            <input type="tel" class="form-control" id="f47" name="f47" value=""   placeholder="xxx-xxx-xxxx" 
-              data-rule-pattern="[0-9 -+.]+" data-msg-pattern="Invalid phone number"  
-              data-rule-required="true"   />
-          </div>
-        </div>
-
-
-        <div class="form-group f101 col-sm-6" data-fid="f101">
-          <label class="control-label" for="f101">Venue</label>
-
-          <div class="input-group">
-            <span class="input-group-addon left"><i class="fa fa-building-o"></i> </span>
-            <input type="text" class="form-control" id="f101" name="f101" value=""     />
-          </div>
-        </div>
-
-
-        <div class="form-group f102 col-sm-6" data-fid="f102">
-          <label class="control-label" for="f102">Event Date</label>
-
-        <div class="input-group date">
-          <span class="input-group-addon left"><i class="fa fa-calendar"></i> </span>
-          <input type="text" class="form-control datepicker" id="f102" name="f102" value=""    
-          data-datepicker-startDate="0d" />
-          <span class="input-group-addon right"><i class="glyphicon glyphicon-th"></i> </span></div>
-        </div>
-
-
-        <div class="form-group f103 col-sm-6" data-fid="f103">
-          <label class="control-label" for="f103">Timeframe</label>
-
-          <div class="input-group">
-            <span class="input-group-addon left"><i class="fa fa-clock-o"></i> </span>
-            <input type="text" class="form-control" id="f103" name="f103" value=""   placeholder="Ex: 3:00pm - 7:00pm"  />
-          </div>
-        </div>
-
-
-        <div class="form-group f104 col-sm-6" data-fid="f104">
-          <label class="control-label" for="f104">Estimated Guest Count</label>
-
-          <div class="input-group">
-            <span class="input-group-addon left"><i class="fa fa-users"></i> </span>
-            <input type="text" class="form-control" id="f104" name="f104" value=""     />
-          </div>
-        </div>
-
-
-
-
-<div class="form-group f105 " data-fid="f105">
-  <label class="control-label" for="f105">Type of Menu Desired</label>
-
-<div class="input-group"><span class="input-group-addon left"><i class="fa fa-cutlery"></i> </span>
-<input type="text" class="form-control" id="f105" name="f105" value=""     />
-</div>
-
-  
-</div>
-
-
-
-
-<div class="form-group f87 " data-fid="f87">
-  <label class="control-label" for="f87">How Did you Hear About Us?</label>
-
-
-<input type="text" class="form-control" id="f87" name="f87" value=""     />
-
-
-  
-</div>
-
-
-
-
-
-<div class='form-group recaptcha'>
-  <script type="text/javascript">
-    function renderReCaptcha(){
-      var jfKey = '6LdopwYTAAAAABunoQoWr5mZGVpVSmTFumNM8ZfO', // when form loaded from jqueryform.com
-      realKey = '6LdJdgwUAAAAACXViZjG_r8pcrnw3BiFSjJlUyjF',
-      theme = 'light',
-      key = -1 !== location.href.indexOf('jqueryform.com/') ? jfKey : realKey;
-      grecaptcha.render( document.getElementById('g-recaptcha'), {
-          'sitekey' : key,
-          'theme' : theme
-        });
-    };
-  </script>
-  <script src="https://www.google.com/recaptcha/api.js?hl=&onload=renderReCaptcha&render=explicit" async defer></script>
-  <div id='g-recaptcha' class='g-recaptcha col_field' data-theme='light' data-sitekey='6LdJdgwUAAAAACXViZjG_r8pcrnw3BiFSjJlUyjF'></div>
-</div>
-
-
-
-
-
-<div class="form-group submit f100 " data-fid="f100" style="position: relative;">
-  <label class="control-label sr-only" for="f100" style="display: block;">Submit Button</label>
-
-  <div class="progress" style="display: none; z-index: -1; position: absolute;">
-    <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%">
     </div>
-  </div>
+<!--
+    
+<label class="control-label" for="f37">Name</label>
+<label class="control-label" for="f42">Company</label>
+<label class="control-label" for="f32">Email</label>
+<label class="control-label" for="f47">Phone</label>
+<label class="control-label" for="f101">Venue</label>
+<label class="control-label" for="f102">Event Date</label>
 
-  <button type="submit" class="btn btn-primary btn-lg" style="z-index: 1;">
-      Submit
-  </button>
-
-</div><div class="clearfix"></div>
-
-<div class="submit">
-  <p class="error bg-warning" style="display:none;">
-    Please check the required fields.  </p>
+<div class="input-group date">
+<span class="input-group-addon left"><i class="fa fa-calendar"></i> </span>
+<input type="text" class="form-control datepicker" id="f102" name="f102" value=""    
+data-datepicker-startDate="0d" />
+<span class="input-group-addon right"><i class="glyphicon glyphicon-th"></i> </span></div>
 </div>
 
-<div class="clearfix"></div>
+
+<label class="control-label" for="f104">Estimated Guest Count</label>
+<label class="control-label" for="f105">Type of Menu Desired</label>
+
+
+
 
 
 </form>
 
-    <!--<a href="http://www.jqueryform.com" target="_blank" class="jf-copyright">Powered by jqueryform.com</a>-->
-    </div>
-
-    <div class="container jf-thankyou" style="display:none;" data-redirect="thank-you.html" data-seconds="">
-      <h3>Your form has been submitted. Thank You!</h3>
-    </div>
-  </div>
 -->
 </div>
-
+</div>
 
 <div class="row footer">
   <div class="col-xs-12">
@@ -444,21 +245,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
-<script src="vendor.js" ></script>
+
 
 <script src="jqueryform.com.min.js?ver=v2.1.0&id=jqueryform-5fc7de" ></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="js/validator.js"></script>
+<script src="js/contact.js"></script>
 
-
-<script type="text/javascript">
-
-  // start jqueryform initialization
-  // --------------------------------
-  JF.init('#jqueryform-5fc7de');
-
-</script>
 
 </body>
 </html>
