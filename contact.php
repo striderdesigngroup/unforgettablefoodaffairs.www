@@ -4,7 +4,7 @@ require('recaptcha-master/src/autoload.php');
 
 // configure
 // an email address that will be in the From field of the email.
-$from = 'Unforgettable Food Affairs Website <food@raleighcatering.com>';
+$from = 'Unforgettable Food Affairs Website <info@example.com>';
 
 // an email address that will receive the email with the output of the form
 $sendTo = 'April Meyers <april@raleighcatering.com>, Strider Design Group <samanthacstrider@gmail.com>';
@@ -17,7 +17,7 @@ $subject = 'Unforgettable Food Affairs Contact Request Form ';
 $fields = array('name' => 'Name', 'company' => 'Company', 'phone' => 'Phone', 'email' => 'Email', 'venue' => 'Venue', 'date' => 'Event Date', 'count' => 'Estmated Guest Count', 'menu' => 'Type of Menu Desired', 'message' => 'Message');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, we will be in touch with you soon!';
+$okMessage = 'Thank you for submitting a contact request. We will be in touch with you soon.';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Please try again later';
