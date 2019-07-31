@@ -7,17 +7,17 @@ require('recaptcha-master/src/autoload.php');
 $from = 'Unforgettable Food Affairs Website <info@example.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'April Meyers <april@raleighcatering.com>, Strider Design Group <samanthacstrider@gmail.com>';
+$sendTo = 'April Meyers <food@raleighcatering.com>, Strider Design Group <samanthacstrider@gmail.com>';
 
 // subject of the email
-$subject = 'Unforgettable Food Affairs Contact Request Form ';
+$subject = 'Unforgettable Food Affairs Event Questionnaire';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
 $fields = array('name' => 'Name', 'company' => 'Company', 'phone' => 'Phone', 'email' => 'Email', 'venue' => 'Venue', 'date' => 'Event Date', 'count' => 'Estmated Guest Count', 'menu' => 'Type of Menu Desired', 'message' => 'Message');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Thank you for submitting a contact request. We will be in touch with you soon.';
+$okMessage = 'Thank you for submitting our questionnaire. We will be in touch with you soon.';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Please try again later';

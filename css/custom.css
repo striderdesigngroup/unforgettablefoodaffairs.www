@@ -169,11 +169,13 @@ span.small {
 	border: none;
 	color: white;
 	text-decoration: none;
+	font-size: 100%;
 }
 
 .btn-primary:hover,
+.btn-primary:focus,
 .btn-primary:hover a {
-	background-color: #B89FB1;
+	background-color: #B89FB1 !important;
 	border: none;
 	color: #4d0c3c;
 	text-decoration: none;
