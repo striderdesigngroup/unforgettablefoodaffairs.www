@@ -9,6 +9,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link href="vendor.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
@@ -87,116 +88,257 @@
       <p>We appreciate your consideration in planning your affair. Please contact us via <a href="mailto:food@raleighcatering.com">food@raleighcatering.com</a>.</p>
 
       <p>
+        <a href="https://goo.gl/maps/TRxWqsnbs6rUQuV38" target="_blank">
         Unforgettable Food Affairs, Inc<br />
         5533 NC HWY 42 Suite B26<br />
         Garner, NC 27529
+        </a>
       </p>
 
-      <p><a href="tel:9196627678">(919) 662-7678</a></p>
+      <p>Phone: <a href="tel:9196627678">(919) 662-7678</a></p>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12975.875117656733!2d-78.5689743!3d35.6038367!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca4cd7cc2adc71c9!2sUnforgettable+Food+Affairs!5e0!3m2!1sen!2sus!4v1479528870328" width="100%" height="554" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <p class="mt-5"><strong>*** Unforgettable Food Affairs provides food &amp; service only ***</strong></p>
+
+      <p>If your venue does not have bar services we can offer a list of preferred bartending companies.</p>
+
+      <p>Rentals, such as tents, tables, chairs, linens &amp; dishware, will need to be arranged with one of our preferred rental companies. This information will be provided in PDF format upon request.
+      </p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12975.875117656733!2d-78.5689743!3d35.6038367!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca4cd7cc2adc71c9!2sUnforgettable+Food+Affairs!5e0!3m2!1sen!2sus!4v1479528870328" width="100%" height="554" frameborder="0" style="border:0" class="mt-5 mobile-display-none" allowfullscreen></iframe>
       <br /><br />
     </div>
   <div class="col-sm-6">
-    <img src="images/gallery/cater-256.jpg" alt="Contact us to make your next affair unforgettable!" class="img-responsive" />
-  </div>
+    <!--<img src="images/gallery/cater-256.jpg" alt="Contact us to make your next affair unforgettable!" class="img-responsive" />-->
+  
+    <div class="jf-form">
+      <form data-licenseKey="JF-8AY050423J354563X" name="jqueryform-76c728" id="jqueryform-76c728" action='admin.php' method='post' enctype='multipart/form-data' novalidate autocomplete="on">
+        <input type="hidden" name="method" value="validateForm">
+        <input type="hidden" id="serverValidationFields" name="serverValidationFields" value="">
 
-<!---
-    <div class="col-sm-6">
-      <form id="contact-form" method="post" action="contact.php" role="form">
+        <div class="form-group f1 required" data-fid="f1">
+          <label class="control-label" for="f1">Client Name</label>
+          <input type="text" class="form-control" id="f1" name="f1" value="" data-rule-required="true" />
+        </div>
 
-        <div class="messages"></div>
+        <div class="form-group col-xs-6 f2 required" data-fid="f2">
+          <label class="control-label" for="f2">Client Email Address</label>
+          <input type="email" class="form-control" id="f2" name="f2" value=""   
+            data-rule-email="true" 
+            data-rule-required="true"  /> 
+        </div>
 
-          <div class="controls">
+        <div class="form-group col-xs-6 f4 required" data-fid="f4">
+          <label class="control-label" for="f4">Client Phone Number</label>
+          <input type="tel" class="form-control" id="f4" name="f4" value="" placeholder="xxx-xxx-xxxx" 
+            data-rule-pattern="[0-9]{3,4}[ -.]*[0-9]{3,4}[ -.]*[0-9]{4}" data-msg-pattern="Invalid phone number"  
+            data-rule-required="true"   />
+        </div>
 
-              <div class="row">
-                  <div class="col-md-12">
-                    <p class="text-muted">* Indicates a required field.</p>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="form_name">* Name</label>
-                          <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Firstname is required.">
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="form_company">Company</label>
-                          <input id="form_company" type="text" name="company" class="form-control" placeholder="" required="required" data-error="Lastname is required.">
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-             
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="form_email">* Email</label>
-                          <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="form_phone">Phone</label>
-                          <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="">
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
-            
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="form_venue">Venue</label>
-                          <input id="form_venue" type="text" name="venue" class="form-control" placeholder="">
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="form_date">Event Date</label>
-                          <input id="form_date" type="date" name="date" class="form-control datepicker" data-datepicker-startDate="0d">
-                      </div>
-                  </div>
-              
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="form_count">Estimated Guest Count</label>
-                          <input id="form_count" type="text" name="count" class="form-control" placeholder="">
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="form-group date">
-                          <label for="form_menu">Type of Menu Desired</label>
-                          <input id="form_menu" type="text" name="menu" class="form-control">
-                      </div>
-                  </div>
-              
-                  <div class="col-md-12">
-                      <div class="form-group">
-                          <label for="form_message">Message</label>
-                          <textarea id="form_message" name="message" class="form-control" placeholder="" rows="2"></textarea>
-                      </div>
-                  </div>
+        <div class="form-group f5 required" data-fid="f5">
+          <label class="control-label" for="f5">Event Date</label>
 
-                  <div class="col-md-12">
-                      <div class="form-group">
-                          <div class="g-recaptcha" data-sitekey="6LdJdgwUAAAAACXViZjG_r8pcrnw3BiFSjJlUyjF" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-                          <input class="form-control hidden" data-recaptcha="true" required data-error="Please complete the Captcha">
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
+          <div class="input-group date">
+            <input type="text" class="form-control datepicker" id="f5" name="f5" value=""   
+                data-rule-required="true"   />
+            <span class="input-group-addon right"><i class="glyphicon glyphicon-th"></i> </span>
+          </div>
+        </div>
 
-                  <div class="col-md-12">
-                      <input type="submit" class="btn btn-primary btn-send" value="SUBMIT">
-                  </div>
-              </div>
-              
+        <div class="form-group f6 " data-fid="f6">
+          <label class="control-label" for="f6">Venue &amp; Venue Address</label>
+          <input type="text" class="form-control" id="f6" name="f6" value=""     />
+        </div>
+
+        <div class="form-group f7 " data-fid="f7">
+          <label class="control-label" for="f7">Approximate Head Count</label>
+          <input type="text" class="form-control " id="f7" name="f7" value=""    
+            data-rule-number="true"   /> 
+        </div>
+
+        <div class="form-group f8 " data-fid="f8">
+          <label class="control-label" for="f8">List the types of foods that you would like for your event/your own menu ideas</label>
+          <input type="text" class="form-control" id="f8" name="f8" value=""     />
+        </div>
+
+        <div class="form-group f10 " data-fid="f10">
+          <label class="control-label" for="f10">Service Style</label>
+          <div class="checkbox">
+            <input  id="f10_1" name="f10[]"  type="checkbox" value="Buffet" 
+             >
+            <label  for="f10_1">
+              Buffet
+            </label>
           </div>
 
+          <div class="checkbox">
+            <input  id="f10_2" name="f10[]"  type="checkbox" value="Plated"  >
+            <label  for="f10_2">
+              Plated
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input  id="f10_3" name="f10[]"  type="checkbox" value="Family Style"  >
+            <label  for="f10_3">
+              Family Style
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group f12 mb-0 pb-0 col-1" data-fid="f12">
+          <label class="control-label" for="f12">Special Dietary Needs</label>
+          <div class="checkbox">
+              <input  id="f12_1" name="f12[]"  type="checkbox" value="Gluten Free" 
+               >
+              <label  for="f12_1">
+                Gluten Free
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <input  id="f12_2" name="f12[]"  type="checkbox" value="Vegan"  >
+              <label  for="f12_2">
+                Vegan
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <input  id="f12_3" name="f12[]"  type="checkbox" value="Vegetarian"  >
+              <label  for="f12_3">
+                Vegetarian
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <input  id="f12_4" name="f12[]"  type="checkbox" value="Dairy Free"  >
+              <label  for="f12_4">
+                Dairy Free
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <input  id="f12_5" name="f12[]"  type="checkbox" value="Other"  >
+              <label  for="f12_5">
+                Other
+              </label>
+            </div>
+        </div>
+
+        <div class="form-group f13 mt-0 pt-0" data-fid="f13">
+          <label class="control-label sr-only" for="f13">Other option</label>
+          <input type="text" class="form-control" id="f13" name="f13" value=""   placeholder="If other, please specify"  />
+        </div>
+
+        <div class="form-group submit f0 " data-fid="f0" style="position: relative;">
+          <label class="control-label sr-only" for="f0" style="display: block;">Submit Button</label>
+
+          <div class="progress" style="display: none; z-index: -1; position: absolute;">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="z-index: 1;">
+              Submit
+          </button>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="submit">
+          <p class="error bg-warning" style="display:none;">
+            Please check the required fields.  </p>
+        </div>
+
+        <div class="clearfix"></div>
+
+
       </form>
+      <div class="jf-thankyou" style="display:none;" data-redirect="" data-seconds="10">
+        <h3>Your form has been submitted. Thank You!</h3>
+      </div>
+</div>
 
-    </div>
+
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+<script src="vendor.js" ></script>
+
+<script src="jqueryform.com.min.js?ver=v3.0.2&id=jqueryform-76c728" ></script>
 
 
--->
+
+
+<!-- [ Start: iCheck support ] ---------------------------------- -->
+<link href="https://cdn.jsdelivr.net/icheck/1.0.2/skins/flat/_all.min.css" rel="stylesheet">
+<style type="text/css">
+/* overwrite bootstrap styles */
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 2px;
+    display: inline-block !important;
+}
+
+.checkbox label, .radio label {
+   padding-left: 4px;
+   display: inline-block !important;
+}
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/icheck/1.0.2/icheck.min.js"></script>
+<script type="text/javascript">
+
+
+;(function ($, undefined)
+{
+
+var checkers = '.icheckbox_flat, .iradio_flat';
+
+
+
+//$('.jf-form .checkbox, .jf-form .radio')
+$('.jf-form input[type="checkbox"], .jf-form input[type="radio"]').each( function( i, e ){
+    var $input = $(e), $div = $input.closest('.checkbox,.radio'), hasImg = $div.find('label > img').length;
+    if( hasImg ){
+
+        $input.css({ 'opacity': '0', 'position': 'absolute', 'left': '-1000px', 'right': '-1000px'} );
+
+    }else{
+
+        initICheck( $input );
+
+        // IE11 and under, the table-cell makes the checkboxes/radio buttons not clickable
+        var isWin = navigator.platform.indexOf('Win') > -1,
+            isEdge = navigator.userAgent.indexOf('Edge/') > -1,
+            noTableCell = isWin && !isEdge;
+        if( !noTableCell ){
+          $div.find('label').css( { display: 'table-cell' } );
+          $(checkers).css( { display: 'table-cell' } );
+        };
+
+    };
+});
+
+})(jQuery);
+
+</script>
+<!-- [ End: iCheck support ] ---------------------------------- -->
+
+
+<script type="text/javascript">
+
+  // start jqueryform initialization
+  // --------------------------------
+  JF.init( '#' + $('.jf-form > form:first-child').attr('id') );
+
+</script>
+  </div>
+
 </div>
 </div>
 
