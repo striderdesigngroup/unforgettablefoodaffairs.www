@@ -7,7 +7,7 @@ require('recaptcha-master/src/autoload.php');
 $from = 'Unforgettable Food Affairs Website <info@example.com>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'April Meyers <food@raleighcatering.com>, Strider Design Group <samanthacstrider@gmail.com>';
+$sendTo = 'Strider Design Group <samanthacstrider@gmail.com>';
 
 // subject of the email
 $subject = 'Unforgettable Food Affairs Event Questionnaire';
