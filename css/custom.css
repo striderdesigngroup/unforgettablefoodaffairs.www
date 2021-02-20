@@ -235,14 +235,17 @@ ul.sidebar li:before {
     color: #976d2a; /* or whatever color you prefer */
 }
 
-
+.upper-bar {
+  width: 101%;
+}
 
 .footer {
 	background-color: #4d0c3c;
 	text-align: center;
 	color: white;
-	padding: 1.25em 1.25em 1em;
+	padding: 1.75em 1.25em 1em;
 	line-height: 160%;
+  width: 101%;
 }
 
 .footer a {
@@ -334,8 +337,7 @@ input.submit {
 
 @media (min-width: 992px) {
 	.navbar {
-		margin-top: 4.5em;
-
+		margin-top: 2.5em;
 		font: normal 600 1.15em/140% 'Open Sans', Arial, Helvetica, sans-serif;
 	}
 
@@ -348,10 +350,26 @@ input.submit {
 
 @media (max-width: 767px) {
 
+  .upper-bar {
+    width: 104%;
+  }
+
+    .upper-bar .container {
+      padding-right: 0;
+    }
+
+      .top-bar a {
+        font-size: 110%;
+      }
+
+        .top-bar a img {
+          width: 18px;
+        }
+
 	button.navbar-toggle {
 		display: block;
 		margin-right: -15px !important;
-		margin-top: -30px;
+		margin-top: -3.5em;
 		border: none !important;
 	}
 
